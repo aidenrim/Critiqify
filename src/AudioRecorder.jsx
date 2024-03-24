@@ -1,4 +1,6 @@
 import { useState, useRef } from "react";
+import {useVolumeLevel, VolumeIndicator} from 'react-volume-indicator'
+
 const AudioRecorder = () => {
   const [permission, setPermission] = useState(false);
   const mediaRecorder = useRef(null);
@@ -6,7 +8,7 @@ const AudioRecorder = () => {
   const [stream, setStream] = useState(null);
   const [audioChunks, setAudioChunks] = useState([]);
   const [audio, setAudio] = useState(null);
-
+  const [beginRecording, endRecording, volume] = useVolumeLevel();
   const getMicrophonePermission = async () => {
     if ("MediaRecorder" in window) {
       try {
@@ -71,6 +73,7 @@ const AudioRecorder = () => {
             <button onClick={startRecording} type="button">
               Start Recording
             </button>
+            //<VolumeIndicator backgroundColor="#ae9773" indicatorColor="rgba(179, 153, 116, 0.87)" volume={volume} />
           ) : null}
           {recordingStatus === "recording" ? (
             <button onClick={stopRecording} type="button">
@@ -82,5 +85,6 @@ const AudioRecorder = () => {
     </div>
   );
 };
+
 export default AudioRecorder;
 const mimeType = "audio/webm";

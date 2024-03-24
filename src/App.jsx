@@ -2,6 +2,7 @@ import "./App.css";
 import { useState, useRef } from "react";
 import VideoRecorder from "../src/VideoRecorder";
 import AudioRecorder from "../src/AudioRecorder";
+import {useVolumeLevel, VolumeIndicator} from 'react-volume-indicator'
 
 const App = () => {
   let [recordOption, setRecordOption] = useState("video");
