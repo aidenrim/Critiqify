@@ -27,12 +27,24 @@ const App = () => {
   return (
     <>
       <div className="alex-park-homescreen">
-        <button className="button-left" onClick={()=>updateToggle(1)}>Home</button>
+        <button className="button-left" onClick={()=>updateToggle(1)}>About</button>
         <h1>CRITIQIFY</h1>
-        <button className="button-middle" onClick={()=>updateToggle(2)}>About</button>
+        <img src = "IMG_2921.jpg" alt="alex park" width="128" height="64"></img>
+        <button className="button-middle" onClick={()=>updateToggle(2)}>Record</button>
         <button className="button-right" onClick={()=>updateToggle(3)}>Credits</button>
       </div>
       <div className={toggle === 1 ? "show-content" : "content"}>
+        <h2>
+          Critiqify is an app used to record and self-critique video presentations.
+        </h2>
+        <h2>
+          We are planning to add more useful functions in the future. 
+        </h2>
+        <button onClick={()=>updateToggle(2)} className = "button">
+          Use Critiqify
+        </button>
+      </div>
+      <div className={toggle === 2 ? "show-content" : "content"}>
         <h2>Record Yourself Doing a Presentation!</h2>
         <div className="button-flex">
           <button onClick={toggleRecordOption("video")}>Record Video</button>
@@ -44,17 +56,11 @@ const App = () => {
         <div className="textbox">
           <form>
             <label>
-              Critique:
-              <input type="text" name="lastCritique" />
+              Critique: <input type="text" name="lastCritique" />
             </label>
             <input type="submit" value="Enter" />
           </form>
         </div>
-      </div>
-      <div className={toggle === 2 ? "show-content" : "content"}>
-        <h2>
-          App used to record and self-critique video presentations.
-        </h2>
       </div>
       <div className={toggle === 3 ? "show-content" : "content"}>
         <h2>
