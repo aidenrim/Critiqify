@@ -30,7 +30,6 @@ const App = () => {
       <div className="alex-park-homescreen">
         <button className="button-left" onClick={()=>updateToggle(1)}>About</button>
         <h1>CRITIQIFY</h1>
-        <img src = "IMG_2921.jpg" alt="alex park" width="128" height="64"></img>
         <button className="button-middle" onClick={()=>updateToggle(2)}>Record</button>
         <button className="button-right" onClick={()=>updateToggle(3)}>Credits</button>
       </div>
