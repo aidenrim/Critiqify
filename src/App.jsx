@@ -43,6 +43,13 @@ const App = () => {
         <button onClick={()=>updateToggle(2)} className = "button">
           Use Critiqify
         </button>
+        <h1>&nbsp;</h1>
+        <h1>HOW TO USE CRITIQIFY</h1>
+        <h2>Simply click the button above to go to the recording page.
+          <br></br>Once you record your videos, use the text box to add self-critiques. 
+          <br></br>Have fun!
+        </h2>
+        <img src = "https://media.discordapp.net/attachments/799331016489042020/1224050139186991205/Screenshot_2024-03-31_at_1.37.57_PM.png?ex=661c1486&is=66099f86&hm=f9c8e74b3c2d70ac91c5bbf7d4b9ad6b8714dc24db13e011ba49cd8d4f1312e5&=&format=webp&quality=lossless&width=1100&height=578" alt="example" width="1024" height="512"></img>
       </div>
       <div className={toggle === 2 ? "show-content" : "content"}>
         <h2>Record Yourself Doing a Presentation!</h2>
