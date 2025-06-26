@@ -77,7 +77,7 @@ const App = () => {
         <h2>
           Aiden Rim :   rim.a@northeastern.edu
         </h2>
-        <a href="https://www.youtube.com/watch?v=DINnS09LZww"><img src = "https://media.discordapp.net/attachments/799331016489042020/1224047747510829166/Screenshot_2024-03-31_at_1.26.42_PM.png?ex=661c124c&is=66099d4c&hm=9ea8d2a22ea489829cd3dfdf0cb6b80d935dfcfec2f88be771ae7b8584e497bf&=&format=webp&quality=lossless&width=1076&height=1174" alt="arim" width="128" height="140"></img></a>
+        <a href="https://www.linkedin.com/in/aidenrim"><img src = "https://cdn.discordapp.com/attachments/799331016489042020/1387867443984072935/Screenshot_2025-06-26_at_11.45.08_AM.png?ex=685ee7c7&is=685d9647&hm=ab5cfecedbab0d09a062b8fd085e2fc6ff2a8e6d91a9776117a12444b2c86705&" alt="arim" width="128" height="140"></img></a>
         <h2>
           Bryan Li  :   li.brya@northeastern.edu
         </h2>
